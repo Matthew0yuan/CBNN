@@ -9,7 +9,7 @@ A **Cell** is an independent processing module with its own parameters and learn
 
 Each Cell includes:
 - An input → output transformation (CNN / MLP / Transformer block / etc.)
-- A local learning rule (Hebbian, Oja, STDP, Predictive Coding, etc.)
+- A local learning rule (Hebbian, Oja, etc....)
 - Optional internal memory or state
 - A prototype vector representing the Cells specialisation
 
@@ -21,7 +21,7 @@ Cells behave like small, autonomous “agents.”
 The Router decides **which Cells to activate** for each input.
 
 Responsibilities:
-- Compute routing scores (prototype similarity, small ANN router, or RL-based)
+- Compute routing scores (currently RL-based)
 - Select **top-K** Cells
 - Send input only to the chosen Cells
 - Update routing parameters using local rules or small-gradient methods

@@ -2,9 +2,8 @@
 
 This document summarizes the core components of a **Cell-Based Neural Network (CBNN)** — a modular, locally-learning, dynamically-routed architecture inspired by biological brains.
 
----
 
-## 1. Cells (Modular Units)
+## Cells (Modular Units)
 
 A **Cell** is an independent processing module with its own parameters and learning rules.
 
@@ -16,9 +15,8 @@ Each Cell includes:
 
 Cells behave like small, autonomous “agents.”
 
----
 
-## 2. Router (Gating Mechanism)
+## Router (Gating Mechanism)
 
 The Router decides **which Cells to activate** for each input.
 
@@ -30,9 +28,9 @@ Responsibilities:
 
 The Router answers: **“Which Cells should work on this sample?”**
 
----
 
-## 3. Prototypes (Cell Identity Vectors)
+
+## Prototypes (Cell Identity Vectors)
 
 Each Cell maintains a prototype vector encoding:
 - Preferred input patterns  
@@ -42,9 +40,9 @@ Each Cell maintains a prototype vector encoding:
 The Router uses input–prototype similarity to select Cells.  
 Prototypes are updated with Hebbian/EMA-style rules.
 
----
 
-## 4. Local Learning Rules
+
+## Local Learning Rules
 
 CBNN does **not** rely on global backpropagation.
 
@@ -58,9 +56,8 @@ Each Cell updates its parameters independently using:
 
 These rules allow self-organization and specialization.
 
----
 
-## 5. Dynamic Rewiring (Optional)
+## Dynamic Rewiring (Optional)
 
 A structural plasticity mechanism that:
 - Detects low-usage or dead Cells
@@ -70,9 +67,8 @@ A structural plasticity mechanism that:
 
 Rewiring keeps the architecture adaptive and evolving.
 
----
 
-## 6. Classification Head (For Supervise Tasks)
+## Classification Head (For Supervise Tasks)
 
 A lightweight head that:
 - Aggregates outputs of activated Cells  
@@ -81,9 +77,7 @@ A lightweight head that:
 
 This preserves the “no global BP” principle.
 
----
-
-## 7. Usage Statistics & Rewards
+## Usage Statistics & Rewards
 
 The system maintains internal metrics:
 - Cell usage frequency  
@@ -94,10 +88,6 @@ Used for:
 - Router updates  
 - Local RL  
 - Rewiring decisions  
-
----
-
-## Summary
 
 CBNN =  
 **Cells** (local learners)  

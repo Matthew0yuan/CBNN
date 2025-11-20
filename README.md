@@ -26,7 +26,7 @@ Responsibilities:
 - Send input only to the chosen Cells
 - Update routing parameters using local rules or small-gradient methods
 
-The Router answers: **“Which Cells should work on this sample?”**
+**“Which Cells should work on this sample?”**
 
 
 
@@ -57,7 +57,7 @@ Each Cell updates its parameters independently using:
 These rules allow self-organization and specialization.
 
 
-## Dynamic Rewiring (Optional)
+## Dynamic Rewiring (on my way)
 
 A structural plasticity mechanism that:
 - Detects low-usage or dead Cells

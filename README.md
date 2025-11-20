@@ -48,14 +48,7 @@ CBNN does **not** rely on global backpropagation.
 
 Each Cell updates its parameters independently using:
 - Hebbian learning
-- Oja’s rule
-- STDP
-- Predictive Coding updates
-- Local reinforcement learning (reward-gated)
-- Short-horizon BP (local only)
-
-These rules allow self-organization and specialization.
-
+this rule allow self-organization and specialisation.
 
 ## Dynamic Rewiring (on my way)
 

@@ -46,9 +46,8 @@ Prototypes are updated with Hebbian/EMA-style rules.
 
 CBNN does **not** rely on global backpropagation.
 
-Each Cell updates its parameters independently using:
-- Hebbian learning
-this rule allow self-organization and specialisation.
+Each Cell updates its parameters independently using Hebbian learning
+
 
 ## Dynamic Rewiring (on my way)
 

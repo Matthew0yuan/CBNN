@@ -1,6 +1,6 @@
 # CBNN Overview
 
-This document summarizes the core components of a **Cell-Based Neural Network (CBNN)** — a modular, locally-learning, dynamically-routed architecture inspired by biological brains.
+This document summarizes the core components of a **Cell-Based Neural Network (CBNN)** 
 
 
 ## Cells (Modular Units)
